@@ -21,11 +21,9 @@ public class Zeydel {
                 for (int j = 0; j < size; j++) {
                     if (j < i) {
                         currentVariableValues[i] -= matrix[i][j] * currentVariableValues[j];
-                        System.out.println(i);
                     }
                     if (j > i) {
                         currentVariableValues[i] -= matrix[i][j] * previousVariableValues[j];
-                        System.out.println(i);
                     }
                 }
                 currentVariableValues[i] /= matrix[i][i];
